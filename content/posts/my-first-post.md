@@ -1,13 +1,14 @@
 ---
 title: "My First Post"
 date: 2019-10-15T23:52:59+09:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
+  - note
 ---
 
-技術ネタブログをはじめてみたいと思い、 `Hugo` という静的サイトジェネレータと `GitHub Pages` を使って作ってみた。
+ブログをまたやりたいと思い、 `Hugo` という静的サイトジェネレータと `GitHub Pages` を使って作ってみた。
 
 3日坊主にならないことを祈る。
 
