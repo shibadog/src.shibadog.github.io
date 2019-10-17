@@ -3,6 +3,8 @@ languageCode = "ja-jp"
 title = "shibadog site"
 theme = "hermit"
 
+googleAnalytics = "UA-150290110-1"
+
 [author]
   name = "shibadog"
 
