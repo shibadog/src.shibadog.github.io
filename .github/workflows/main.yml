@@ -34,5 +34,5 @@ jobs:
             msg="$*"
           fi
           git commit -m "$msg"
-          git pull
+          git pull origin master
           git push origin master
