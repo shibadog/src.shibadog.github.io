@@ -23,14 +23,11 @@ jobs:
       - name: Build
         run: hugo
 
-      - name: git setting
-        run: |
-          git config --local user.email "shibadog99@gmail.com"
-          git config --local user.name "shibadog"
-
       - name: Deploy
         run: |
           cd public
+          git config --global user.email "shibadog99@gmail.com"
+          git config --global user.name "shibadog"
           git add .
           msg="rebuilding site $(date)"
           if [ -n "$*" ]; then
