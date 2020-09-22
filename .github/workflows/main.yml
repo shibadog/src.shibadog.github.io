@@ -26,11 +26,12 @@ jobs:
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
-          echo "$GITHUB_IO_REPO_DEPLOY_KEY" > ~/deploy_key.pem
+          echo "$DEPLOY_KEY" > ~/deploy_key.pem
           chmod 600 ~/deploy_key.pem
           git config --global user.email "shibadog99@gmail.com"
           git config --global user.name "shibadog"
           cd public
+          git config pull.rebase true
           git config remote.origin.url "git@github.com:shibadog/shibadog.github.io.git"
           git checkout master
 
