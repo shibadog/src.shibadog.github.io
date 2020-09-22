@@ -22,7 +22,7 @@ jobs:
 
       - name: Setup git repogitories
         env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
           echo "$GITHUB_IO_REPO_DEPLOY_KEY" > ~/deploy_key.pem
           chmod 600 ~/deploy_key.pem
