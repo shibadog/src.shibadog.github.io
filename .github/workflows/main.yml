@@ -56,7 +56,8 @@ jobs:
         run: |
           git add public
           if ! git diff --cached --quiet; then
-            origin=https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com:shibadog/src.shibadog.github.io.git
+            git config pull.rebase true
+            origin=https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/shibadog/src.shibadog.github.io.git
             git commit -m "Update dependency of submodule"
             git pull $origin master
             git push $origin master
